@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="coco">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="togle-btn" onclick="login()">Login</button>
+                <button type="button" class="togle-btn" onclick="Register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="fb.png" alt="imgnt">
+                <img src="tw.png" alt="imgnt">
+                <img src="gp.png" alt="imgnt">
+            </div>
+         <section>
+             <form class="input-group" id="login">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="chech-box"><span>3e9al 3la lmod pass ta3k</span>
+                <button type="submit" class="submit-btn">Log in</button>
+             </form>     
+              <form class="input-group" id="Register">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="checkbox" class="chech-box"><span>I agree with the terms conditionts</span>
+                <button type="submit" class="submit-btn">Register</button>
+             </form>
+         </section>
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("Register");
+        var z = document.getElementById("btn");
+        function Register(){
+            z.style.left='110px';
+            x.style.display='none';
+            y.style.display='block';
+        }
+        function login(){
+            z.style.left='0px';
+            x.style.display='block';
+            y.style.display='none';
+
+        }
+
+
+    </script>
+</body>
+</html>
